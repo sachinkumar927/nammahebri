@@ -1,0 +1,138 @@
+export interface Village {
+  id: string;
+  name: string;
+  population: number;
+  panchayat: string;
+  latitude: number;
+  longitude: number;
+  bannerImage: string;
+  emergencyContacts: { name: string; number: string }[];
+  nearbyTowns: string[];
+  transport: string[];
+  importantPlaces: string[];
+  images: string[];
+  description: string;
+}
+
+export const villagesData: Village[] = [
+  {
+    id: "hebri",
+    name: "Hebri",
+    population: 8500,
+    panchayat: "Hebri Gram Panchayat",
+    latitude: 13.4311,
+    longitude: 74.9897,
+    bannerImage: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800",
+    emergencyContacts: [
+      { name: "Police Station", number: "08256-232100" },
+      { name: "PHC Hebri", number: "08256-232200" },
+      { name: "Fire Station", number: "101" },
+    ],
+    nearbyTowns: ["Karkala (25 km)", "Udupi (45 km)", "Kundapura (40 km)"],
+    transport: ["KSRTC Bus Stand", "Auto Rickshaws", "Local Jeep Service"],
+    importantPlaces: ["Hebri Bus Stand", "Taluk Office", "Sub-Registrar Office", "Post Office"],
+    images: [
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400",
+      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=400",
+    ],
+    description: "Hebri is the taluk headquarters located in Udupi district, Karnataka. It is a growing town surrounded by lush greenery and serves as an administrative hub.",
+  },
+  {
+    id: "mundaje",
+    name: "Mundaje",
+    population: 3200,
+    panchayat: "Mundaje Gram Panchayat",
+    latitude: 13.3985,
+    longitude: 75.0234,
+    bannerImage: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800",
+    emergencyContacts: [
+      { name: "Panchayat Office", number: "08256-245100" },
+      { name: "Health Sub-Center", number: "08256-245200" },
+    ],
+    nearbyTowns: ["Hebri (8 km)", "Karkala (20 km)"],
+    transport: ["KSRTC Bus", "Auto Rickshaws"],
+    importantPlaces: ["Mundaje Temple", "Government School", "Ration Shop"],
+    images: [
+      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=400",
+    ],
+    description: "Mundaje is a scenic village known for its paddy fields and ancient temples. It offers a peaceful rural lifestyle.",
+  },
+  {
+    id: "siddapura",
+    name: "Siddapura",
+    population: 4100,
+    panchayat: "Siddapura Gram Panchayat",
+    latitude: 13.4552,
+    longitude: 74.9623,
+    bannerImage: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800",
+    emergencyContacts: [
+      { name: "Panchayat Office", number: "08256-251100" },
+      { name: "Sub-Center", number: "08256-251200" },
+    ],
+    nearbyTowns: ["Hebri (6 km)", "Kundapura (35 km)"],
+    transport: ["KSRTC Bus", "Local Auto"],
+    importantPlaces: ["Siddapura School", "Anganwadi Center", "Co-op Bank"],
+    images: [
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400",
+    ],
+    description: "Siddapura is an agricultural village known for areca nut and paddy cultivation with a close-knit community.",
+  },
+  {
+    id: "nadpal",
+    name: "Nadpal",
+    population: 2800,
+    panchayat: "Nadpal Gram Panchayat",
+    latitude: 13.4102,
+    longitude: 75.0456,
+    bannerImage: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800",
+    emergencyContacts: [
+      { name: "Panchayat Office", number: "08256-260100" },
+    ],
+    nearbyTowns: ["Hebri (12 km)", "Karkala (18 km)"],
+    transport: ["Local Bus Service", "Auto Rickshaws"],
+    importantPlaces: ["Nadpal Temple", "Primary School"],
+    images: [
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400",
+    ],
+    description: "Nadpal is a small village surrounded by Western Ghats forests, known for its serene natural beauty.",
+  },
+  {
+    id: "belthangady-cross",
+    name: "Belthangady Cross",
+    population: 1900,
+    panchayat: "Hebri Gram Panchayat",
+    latitude: 13.4200,
+    longitude: 74.9750,
+    bannerImage: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800",
+    emergencyContacts: [
+      { name: "Hebri Police", number: "08256-232100" },
+    ],
+    nearbyTowns: ["Hebri (3 km)", "Karkala (22 km)"],
+    transport: ["KSRTC Bus", "Auto"],
+    importantPlaces: ["Junction Point", "Small Market"],
+    images: [
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400",
+    ],
+    description: "Belthangady Cross is a junction village near Hebri, serving as a transit point for nearby areas.",
+  },
+  {
+    id: "chara",
+    name: "Chara",
+    population: 2400,
+    panchayat: "Chara Gram Panchayat",
+    latitude: 13.4650,
+    longitude: 74.9400,
+    bannerImage: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800",
+    emergencyContacts: [
+      { name: "Panchayat Office", number: "08256-270100" },
+      { name: "Health Sub-Center", number: "08256-270200" },
+    ],
+    nearbyTowns: ["Hebri (10 km)", "Kundapura (30 km)"],
+    transport: ["Local Bus", "Auto Rickshaws"],
+    importantPlaces: ["Chara Falls", "Ancient Temple", "Government School"],
+    images: [
+      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400",
+    ],
+    description: "Chara is a picturesque village known for its waterfall and ancient temples amidst the Western Ghats.",
+  },
+];
