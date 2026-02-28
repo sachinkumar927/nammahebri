@@ -1,6 +1,292 @@
-#root {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  text-align: left;
+/* ===============================
+   THEME VARIABLES
+================================= */
+:root {
+  --gov-blue: #0d3b73;
+  --gov-blue-dark: #07264d;
+  --gov-blue-light: #1f5fa5;
+  --gov-gold: #f4b400;
+  --gov-gold-light: #ffd54f;
+  --gov-red: #c62828;
+  --gov-green: #2e7d32;
+  --border-color: #d6e0f0;
+  --card-bg: #ffffff;
+  --text-dark: #1a1a1a;
+  --text-light: #ffffff;
+  --body-bg: #f4f7fb;
+}
+
+/* ===============================
+   FIXED COMPACT NAVBAR & LOGO
+================================= */
+.sticky-top {
+  z-index: 1050;
+  top: 0;
+}
+
+.top-bar {
+  background-color: var(--gov-blue-dark) !important;
+  font-size: 11px;
+  letter-spacing: 0.3px;
+}
+
+.navbar {
+  padding: 4px 0 !important;
+  background: #ffffff !important;
+}
+
+.app-name {
+  color: var(--gov-blue);
+  font-size: 17px;
+  letter-spacing: -0.3px;
+  line-height: 1;
+  /* Fixed vertical spacing */
+}
+
+.official-text {
+  font-size: 9px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  margin-top: 2px;
+  display: block;
+}
+
+.navbar .nav-link {
+  font-size: 12px;
+  color: #4b5563 !important;
+  padding: 4px 8px !important;
+  margin: 1px 2px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.navbar .nav-link:hover {
+  background-color: #f3f4f6;
+  color: var(--gov-blue) !important;
+}
+
+.navbar .nav-link.active {
+  background-color: var(--gov-blue) !important;
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* ===============================
+   PREMIUM HERO SECTION
+================================= */
+.hero-section {
+  position: relative;
+  min-height: 550px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url('./assets/NammaHebriBG.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem !important;
+  /* Premium Large Font */
+  color: #ffffff !important;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.backdrop-blur {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ===============================
+   FIXED STATS SECTION
+================================= */
+.gov-text-blue {
+  color: var(--gov-blue) !important;
+}
+
+.display-stats {
+  font-size: 2.8rem !important;
+  /* Increased font size */
+  font-weight: 800;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .border-end-md {
+    border-right: 1px solid #e5e7eb;
+  }
+}
+
+/* ===============================
+   CARDS & BUTTONS
+================================= */
+.gov-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.gov-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+
+/* Footer */
+/* ===============================
+   THEME VARIABLES
+================================= */
+:root {
+  --gov-blue: #0d3b73;
+  --gov-blue-dark: #07264d;
+  --gov-blue-light: #1f5fa5;
+  --gov-gold: #f4b400;
+  --gov-gold-light: #ffd54f;
+  --gov-red: #c62828;
+  --gov-green: #2e7d32;
+  --border-color: #d6e0f0;
+  --card-bg: #ffffff;
+  --text-dark: #1a1a1a;
+  --text-light: #ffffff;
+  --body-bg: #f4f7fb;
+}
+
+/* ===============================
+   FIXED COMPACT NAVBAR & LOGO
+================================= */
+.sticky-top {
+  z-index: 1050;
+  top: 0;
+}
+
+.top-bar {
+  background-color: var(--gov-blue-dark) !important;
+  font-size: 11px;
+}
+
+.navbar {
+  padding: 4px 0 !important;
+  background: #ffffff !important;
+}
+
+.app-name {
+  color: var(--gov-blue);
+  font-size: 17px;
+  line-height: 1;
+}
+
+.official-text {
+  font-size: 9px !important;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 2px;
+  display: block;
+}
+
+.navbar .nav-link {
+  font-size: 12px;
+  color: #4b5563 !important;
+  padding: 4px 8px !important;
+  margin: 1px 2px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar .nav-link.active {
+  background-color: var(--gov-blue) !important;
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* ===============================
+   FIXED STATS SECTION (BLUE & LARGE)
+================================= */
+.gov-text-blue {
+  color: var(--gov-blue) !important;
+}
+
+.display-stats {
+  font-size: 2.8rem !important;
+  /* Increased font size */
+  font-weight: 800;
+}
+
+/* ===============================
+   GOVERNMENT FOOTER
+================================= */
+.gov-footer {
+  background: linear-gradient(135deg, var(--gov-blue-dark), var(--gov-blue));
+  color: var(--text-light);
+  padding: 40px 0 20px 0;
+}
+
+.gov-footer h5 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 8px;
+  color: var(--gov-gold);
+}
+
+.gov-footer p,
+.gov-footer a {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.gov-footer a:hover {
+  color: var(--gov-gold);
+  text-decoration: underline;
+}
+
+.gov-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  margin-top: 30px;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Side bar */
+/* Ensure the sidebar slides from the LEFT */
+.offcanvas-start.mobile-sidebar {
+  width: 280px !important;
+  border-right: 1px solid var(--border-color);
+}
+
+/* Premium active state for the sidebar items */
+.sidebar-active {
+  background-color: var(--gov-blue) !important;
+  color: white !important;
+  font-weight: 600;
+  margin: 4px 10px;
+  border-radius: 8px !important;
+  width: calc(100% - 20px);
+}
+
+/* Custom scrollbar so long list doesn't look messy */
+.custom-scrollbar {
+  overflow-y: auto;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ccc;
 }

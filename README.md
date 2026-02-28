@@ -1,147 +1,70 @@
-# 🏛 Namma Hebri – Taluk Information Portal
+# Getting Started with Create React App
 
-Namma Hebri is a structured, web application that provides complete digital information about Hebri Taluk and its villages.  
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The platform centralizes village information, essential services, temples, emergency contacts, government offices, business listings, agriculture support, and community updates into a single responsive portal.
+## Available Scripts
 
----
+In the project directory, you can run:
 
-## 🚀 Tech Stack
+### `npm start`
 
-- React JS (Functional Components + Hooks)
-- React Router
-- Bootstrap 5
-- Custom CSS
-- Firebase (Initialized for future Firestore integration)
-- Local constant data files (Current data source)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
----
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## 🏡 Core Features
+### `npm test`
 
-### Village Information
-- Village profile pages
-- Google Maps embed
-- Population details
-- Panchayat information
-- Emergency contacts
-- Nearby towns
-- Transport availability
-- Important places
-- Village-wise services and temples
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Services Directory
-Includes categorized listings:
+### `npm run build`
 
-- Education
-- Healthcare
-- Daily Needs
-- Local Services
-- Emergency & Safety
-- Government Offices
-- Tourism & Cultural
-- Business & Employment
-- Agriculture & Farmer Support
-- Advanced Human Needs
-- Community Engagement
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Each listing contains:
-- Name
-- Category & Subcategory
-- Type (Government / Private / NGO)
-- Village
-- Address
-- Contact
-- Image
-- Location coordinates
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### Temples Module
-- Temple listing page
-- Temple detail page
-- Deity information
-- History
-- Pooja timings
-- Festival details
-- Location map
-- Nearby temples filter
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
----
+### `npm run eject`
 
-## 🔎 Filtering & Sorting
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-- Search by name
-- Filter by category
-- Filter by subcategory
-- Filter by village
-- Filter by type
-- Sort A–Z / Z–A
-- Sort by nearest (Location-based)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
----
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## 📍 Location-Based Features
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-- Browser Geolocation API
-- Haversine formula for distance calculation
-- Displays distance in KM
-- Sort by nearest services or temples
+## Learn More
 
----
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## ⚙️ Installation
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Clone Repository
+### Code Splitting
 
-```bash
-git clone https://github.com/your-username/namma-hebr i.git
-cd namma-hebr i
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Install Dependencies
+### Analyzing the Bundle Size
 
-```bash
-npm install
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Start Development Server
+### Making a Progressive Web App
 
-```bash
-npm start
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
----
+### Advanced Configuration
 
-## 🔐 Firebase Configuration
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-Create a Firebase project and update:
+### Deployment
 
-```
-src/firebase/firebaseConfig.js
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-Firestore integration can be enabled in future versions.
+### `npm run build` fails to minify
 
----
-
-## 📌 Future Enhancements
-
-- Admin dashboard
-- Firestore integration
-- Authentication system
-- Review & rating system
-- Kannada language support
-- Event calendar
-- Mobile app version
-- Deployment on Vercel or Firebase Hosting
-
----
-
-## 📄 License
-
-This project is intended for community and educational use.
-
----
-
-## 👨‍💻 Author
-
-Sachin Kumar
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
