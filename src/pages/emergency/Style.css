@@ -1,0 +1,163 @@
+/* Emergency Page Specific CSS */
+
+.emergency-page {
+    background-color: var(--body-bg);
+    min-height: 100vh;
+}
+
+.emergency-header h2 {
+    font-size: 20px;
+    color: var(--gov-blue-dark);
+}
+
+.official-tag {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--gov-red);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Compact Search & Filters */
+.gov-filter-card {
+    background: white;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    width: 100%;
+    font-size: 12px;
+    padding: 6px 10px 6px 30px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    color: #6c757d;
+}
+
+.cat-btn {
+    font-size: 11px;
+    padding: 4px 12px;
+    border: 1px solid var(--border-color);
+    background: white;
+    border-radius: 4px;
+    white-space: nowrap;
+    color: var(--gov-blue);
+    transition: 0.2s;
+}
+
+.cat-btn.active {
+    background: var(--gov-blue);
+    color: white;
+    border-color: var(--gov-blue);
+}
+
+/* Professional Contact Cards */
+.emergency-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-top: 3px solid var(--gov-blue);
+    border-radius: 4px;
+    padding: 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s;
+}
+
+.emergency-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.status-indicator {
+    font-size: 9px;
+    background: #e8f5e9;
+    color: var(--gov-green);
+    padding: 1px 6px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.category-pill {
+    font-size: 9px;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.contact-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 2px;
+}
+
+.official-name {
+    font-size: 11px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.action-info {
+    background: #f8f9fa;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    color: #444;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.card-bottom {
+    margin-top: auto;
+    display: flex;
+    gap: 5px;
+}
+
+.call-btn {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.call-btn.main {
+    background: var(--gov-red);
+    color: white;
+    flex: 2;
+}
+
+.call-btn.alt {
+    background: #f1f3f5;
+    color: var(--text-dark);
+    border: 1px solid #dee2e6;
+    flex: 1;
+}
+
+.call-btn:hover {
+    opacity: 0.9;
+    color: white;
+}

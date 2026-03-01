@@ -1,0 +1,60 @@
+export const educationData = [
+    {
+        id: "gjc-hebri",
+        name: "Government Junior College, Hebri",
+        category: "Colleges",
+        village: "Hebri",
+        address: "Near Taluk Office, Hebri Main Road",
+        contact: "08256-232015",
+        courses: ["Arts", "Commerce", "Science (PCMB)"],
+        type: "Government",
+        image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600",
+    },
+    {
+        id: "srinivasa-school",
+        name: "Srinivasa Higher Primary School",
+        category: "Schools",
+        village: "Siddapura",
+        address: "Siddapura Cross, Main Road",
+        contact: "08256-251022",
+        courses: ["1st to 8th Standard (State Syllabus)"],
+        type: "Aided",
+        image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600",
+    },
+    {
+        id: "vidya-tuition",
+        name: "Vidya Coaching Centre",
+        category: "Tuition & Coaching",
+        village: "Hebri",
+        address: "1st Floor, Complex Building, Bus Stand",
+        contact: "+91 9876543210",
+        courses: ["10th State/CBSE", "PUC Science CET/NEET"],
+        type: "Private",
+        image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600",
+    },
+    {
+        id: "nataraja-dance",
+        name: "Nataraja School of Dance & Music",
+        category: "Arts & Culture",
+        village: "Chara",
+        address: "Near Chara Temple, Chara",
+        contact: "+91 8765432109",
+        courses: ["Bharatanatyam", "Carnatic Vocals", "Tabla"],
+        type: "Private",
+        image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600",
+    },
+    {
+        id: "iti-hebri",
+        name: "Government ITI, Hebri",
+        category: "Vocational",
+        village: "Nadpal",
+        address: "Nadpal Road, Hebri",
+        contact: "08256-260111",
+        courses: ["Fitter", "Electrician", "Mechanic"],
+        type: "Government",
+        image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600",
+    }
+];
+
+export const categories = ["All", "Schools", "Colleges", "Tuition & Coaching", "Arts & Culture", "Vocational"];
+export const villages = ["All Villages", "Hebri", "Siddapura", "Chara", "Nadpal", "Mundaje", "Kuchur"];

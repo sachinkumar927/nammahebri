@@ -1,0 +1,28 @@
+/* App.css already handles colors, these are layout specific */
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.gov-card {
+    transition: transform 0.2s ease;
+}
+
+.gov-card:hover {
+    transform: translateY(-3px);
+}
+
+/* Ensure body text stays at exactly 12px */
+.card-body p {
+    font-size: 12px !important;
+}
+
+/* Ensure titles stay at 14px */
+.card-body h6 {
+    font-size: 14px !important;
+}

@@ -1,0 +1,46 @@
+/* Government Theme Extensions for Temples */
+.btn-gov-active {
+    background-color: var(--gov-blue) !important;
+    color: white !important;
+    border: none;
+}
+
+.text-gov-blue {
+    color: var(--gov-blue-dark);
+}
+
+.badge-gov-gold {
+    background-color: #fff9db;
+    color: #856404;
+    border: 1px solid #ffeeba;
+    font-size: 9px;
+    padding: 1px 5px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn-gov-outline {
+    border: 1px solid var(--gov-blue);
+    color: var(--gov-blue);
+    background: transparent;
+    font-weight: 600;
+}
+
+.btn-gov-outline:hover {
+    background: var(--gov-blue);
+    color: white;
+}
+
+.gov-card {
+    border: 1px solid var(--border-color) !important;
+    border-radius: 6px !important;
+}
+
+/* Adjusting the grid for high density */
+@media (min-width: 992px) {
+    .col-lg-3 {
+        width: 25%;
+        /* 4 cards per row instead of 3 */
+    }
+}

@@ -1,0 +1,53 @@
+/* Custom Sidebar Behavior */
+.bg-gradient-dark {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+}
+
+.transition {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Ensure sub-sidebar rounds corners on active items */
+.list-group-item.bg-primary {
+    margin: 4px 10px;
+    width: auto;
+}
+
+/* 75/25 Layout logic for desktop sticky */
+@media (min-width: 992px) {
+    .sticky-lg-top {
+        position: sticky;
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 991px) {
+    .order-1 {
+        order: 1 !important;
+    }
+
+    /* Sidebar (Village List) shows first on mobile */
+    .order-2 {
+        order: 2 !important;
+    }
+
+    /* Main content follows */
+
+    .display-5 {
+        font-size: 1.8rem;
+    }
+}
+
+.leading-relaxed {
+    line-height: 1.7;
+}
+
+/* Scrollbar for the sidebar */
+.list-group::-webkit-scrollbar {
+    width: 4px;
+}
+
+.list-group::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}

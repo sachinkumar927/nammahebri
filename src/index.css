@@ -34,13 +34,13 @@ code {
 }
 
 .gov-section-title {
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 600;
   color: #0d3b73;
   border-bottom: 2px solid #f4b400;
   margin-bottom: 15px;
-  padding-bottom: 5px;
-  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .icon-circle {
@@ -79,4 +79,3 @@ code {
     font-size: 16px;
   }
 }
-

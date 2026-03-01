@@ -1,0 +1,40 @@
+/* Tourism Specifics */
+.tourism-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #fff;
+    cursor: pointer;
+}
+
+.tourism-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(25, 135, 84, 0.15) !important;
+}
+
+.tourism-card img {
+    transition: transform 0.5s ease;
+}
+
+.tourism-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Custom width for intro text */
+.max-width-500 {
+    max-width: 500px;
+}
+
+/* Rounded pills for categories */
+.btn-white {
+    background: white;
+    color: #444;
+    border: 1px solid #ddd;
+}
+
+/* Success colors (Green) for Tourism */
+.btn-success {
+    background-color: #198754 ;
+}
+
+.bg-success-subtle {
+    background-color: #e8f5e9 !important;
+}

@@ -1,0 +1,30 @@
+/* Optimization for Single Row Filter */
+.hide-scrollbar::-webkit-scrollbar {
+    height: 3px;
+    /* Very thin scrollbar for categories */
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.gov-card {
+    border: 1px solid var(--border-color) !important;
+    border-top: 2px solid var(--gov-blue) !important;
+    /* Visual indicator of official status */
+    border-radius: 4px !important;
+    transition: transform 0.2s ease;
+}
+
+.gov-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05) !important;
+}
+
+.text-truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

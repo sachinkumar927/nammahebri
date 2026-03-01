@@ -161,6 +161,14 @@
   --body-bg: #f4f7fb;
 }
 
+.text-app {
+  color: var(--gov-blue) !important;
+}
+
+.bg-app {
+  background-color: var(--gov-blue) !important;
+}
+
 /* ===============================
    FIXED COMPACT NAVBAR & LOGO
 ================================= */

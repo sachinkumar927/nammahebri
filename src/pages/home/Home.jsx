@@ -15,8 +15,8 @@ import {
     Phone,
 } from "lucide-react";
 
-import { villagesData } from "../data/villagesData";
-import { templesData } from "../data/templesData";
+import { villagesData } from "../../data/villagesData";
+import { templesData } from "../../data/TemplesData";
 
 const quickAccessItems = [
     { label: "Villages", path: "/villages", icon: MapPin, color: "bg-gov-blue" },
@@ -131,6 +131,42 @@ const Home = () => {
                 </div>
             </section>
 
+
+            {/* ================= UPCOMING EVENTS ================= */}
+            {upcomingFestivals.length > 0 && (
+                <section className="py-4 bg-light">
+                    <div className="container">
+                        <h2 className="gov-section-title fw-bold">
+                            Upcoming Events
+                        </h2>
+
+                        <div className="row g-3">
+                            {upcomingFestivals.map((f, index) => (
+                                <div key={index} className="col-12 col-md-6 col-lg-3">
+                                    <div className="gov-card p-3 h-100">
+                                        <div className="badge bg-warning text-dark mb-2">
+                                            {f.month}
+                                        </div>
+
+                                        <div className="fw-bold">
+                                            {f.name}
+                                        </div>
+
+                                        <div className="small text-muted mb-1">
+                                            {f.temple}
+                                        </div>
+
+                                        <div className="small">
+                                            {f.description}
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            )}
+
             {/* ================= EMERGENCY ================= */}
             <section className="py-4 bg-light">
                 <div className="container">
@@ -172,79 +208,6 @@ const Home = () => {
 
                 </div>
             </section>
-
-            {/* ================= FEATURED TEMPLES ================= */}
-            <section className="py-4">
-                <div className="container">
-                    <h2 className="gov-section-title fw-bold">
-                        Featured Temples
-                    </h2>
-
-                    <div className="row g-3">
-                        {templesData.slice(0, 4).map((temple) => (
-                            <div key={temple.id} className="col-12 col-md-6 col-lg-3">
-                                <Link
-                                    to={`/temples/${temple.id}`}
-                                    className="text-decoration-none"
-                                >
-                                    <div className="gov-card h-100">
-                                        <img
-                                            src={temple.imageUrl}
-                                            alt={temple.templeName}
-                                            className="img-fluid"
-                                            style={{ height: "180px", objectFit: "cover", width: "100%" }}
-                                        />
-                                        <div className="p-3">
-                                            <div className="fw-bold">
-                                                {temple.templeName}
-                                            </div>
-                                            <div className="small text-muted">
-                                                {temple.deityName} • {temple.village}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* ================= UPCOMING FESTIVALS ================= */}
-            {upcomingFestivals.length > 0 && (
-                <section className="py-4 bg-light">
-                    <div className="container">
-                        <h2 className="gov-section-title fw-bold">
-                            Upcoming Festivals
-                        </h2>
-
-                        <div className="row g-3">
-                            {upcomingFestivals.map((f, index) => (
-                                <div key={index} className="col-12 col-md-6 col-lg-3">
-                                    <div className="gov-card p-3 h-100">
-                                        <div className="badge bg-warning text-dark mb-2">
-                                            {f.month}
-                                        </div>
-
-                                        <div className="fw-bold">
-                                            {f.name}
-                                        </div>
-
-                                        <div className="small text-muted mb-1">
-                                            {f.temple}
-                                        </div>
-
-                                        <div className="small">
-                                            {f.description}
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-            )}
-
         </div>
     );
 };

@@ -1,0 +1,55 @@
+/* Grid Card Hover Effect */
+.gov-health-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+.gov-health-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1) !important;
+    border-color: #dc354566 !important;
+}
+
+/* Category Scrollbar Hiding */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Status Pulse Animation */
+.pulse-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #28a745;
+    border-radius: 50%;
+    display: inline-block;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 5px rgba(40, 167, 69, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+    }
+}
+
+/* Mobile Adjustments for 2-column consistency */
+@media (max-width: 576px) {
+    .gov-health-card h5 {
+        font-size: 13px !important;
+    }
+}

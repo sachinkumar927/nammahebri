@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { Offcanvas } from "bootstrap";
+
 import {
   Home, MapPin, GraduationCap, Heart, ShoppingBag,
   Wrench, Church, AlertTriangle, Building, Palmtree,
@@ -16,7 +18,7 @@ const navItems = [
   { label: "Services", path: "/services", icon: Wrench },
   { label: "Temples", path: "/temples", icon: Church },
   { label: "Emergency", path: "/emergency", icon: AlertTriangle },
-  { label: "Govt Offices", path: "/government-offices", icon: Building },
+  { label: "Dept & Offices", path: "/dept-offices", icon: Building },
   { label: "Tourism", path: "/tourism", icon: Palmtree },
   { label: "Business & Jobs", path: "/business-jobs", icon: Briefcase },
   { label: "Agriculture", path: "/agriculture", icon: Leaf },
@@ -111,13 +113,11 @@ const Navbar = () => {
         <div className="offcanvas-body p-0 custom-scrollbar">
           <div className="list-group list-group-flush">
             {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 border-0 ${location.pathname === item.path ? "sidebar-active" : ""
-                  }`}
-                data-bs-dismiss="offcanvas"
-              >
+              <Link key={item.path} to={item.path} className={`list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 border-0 ${location.pathname === item.path ? "sidebar-active" : ""}`}
+                onClick={() => {
+                  const sidebar = document.getElementById("mobileSidebar");
+                  const bsOffcanvas = Offcanvas.getInstance(sidebar); if (bsOffcanvas) { bsOffcanvas.hide(); }
+                }} >
                 <item.icon size={18} className={location.pathname === item.path ? "text-white" : "text-primary"} />
                 <span className="sidebar-label">{item.label}</span>
               </Link>
