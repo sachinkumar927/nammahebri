@@ -1,10 +1,19 @@
-import React, { useState } from "react";
-import { departmentData, deptCategories } from "../../data/DeptOfficesData.jsx";
 import {
-    Search, ChevronRight, Phone, Info,
-    FileText, Users, Sprout, Vote, GraduationCap, HardHat, Building2, HeartPulse, X
+    Building2,
+    ChevronRight,
+    FileText,
+    GraduationCap, HardHat,
+    HeartPulse,
+    Info,
+    Phone,
+    Search,
+    Sprout,
+    Users,
+    Vote
 } from "lucide-react";
+import { useState } from "react";
 import "../../App.css";
+import { departmentData, deptCategories } from "../../data/DeptOfficesData.jsx";
 import "./Style.css";
 
 const IconComponent = ({ name, color, size = 18 }) => {

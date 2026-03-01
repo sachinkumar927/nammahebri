@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { communityData, communityCategories, successStories, galleryPhotos, villages } from "../../data/CommunityData.jsx";
-import { Search, MapPin, Camera, Star } from "lucide-react";
+import { Camera, MapPin, Search, Star } from "lucide-react";
+import { useState } from "react";
 import "../../App.css";
+import { communityCategories, communityData, galleryPhotos, successStories, villages } from "../../data/CommunityData.jsx";
 
 const Community = () => {
     const [activeTab, setActiveTab] = useState("All");

@@ -1,22 +1,22 @@
-import { Link } from "react-router-dom";
 import {
-    MapPin,
+    AlertTriangle,
+    Briefcase,
+    Building,
+    Church,
     GraduationCap,
     Heart,
-    ShoppingBag,
-    Wrench,
-    Church,
-    AlertTriangle,
-    Building,
-    Palmtree,
-    Briefcase,
     Leaf,
-    Users,
+    MapPin,
+    Palmtree,
     Phone,
+    ShoppingBag,
+    Users,
+    Wrench,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
-import { villagesData } from "../../data/villagesData.jsx";
 import { templesData } from "../../data/templesData.jsx";
+import { villagesData } from "../../data/villagesData.jsx";
 
 const quickAccessItems = [
     { label: "Villages", path: "/villages", icon: MapPin, color: "bg-gov-blue" },

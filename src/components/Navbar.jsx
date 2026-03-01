@@ -1,11 +1,22 @@
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
 import { Offcanvas } from "bootstrap";
+import { Link, useLocation } from "react-router-dom";
 
 import {
-  Home, MapPin, GraduationCap, Heart, ShoppingBag,
-  Wrench, Church, AlertTriangle, Building, Palmtree,
-  Briefcase, Leaf, Users, Mail, Phone, Menu
+  AlertTriangle,
+  Briefcase,
+  Building,
+  Church,
+  GraduationCap, Heart,
+  Home,
+  Leaf,
+  Mail,
+  MapPin,
+  Menu,
+  Palmtree,
+  Phone,
+  ShoppingBag,
+  Users,
+  Wrench
 } from "lucide-react";
 import "../App.css";
 

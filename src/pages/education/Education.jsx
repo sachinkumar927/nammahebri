@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { educationData, categories, villages } from "../../data/EducationData.jsx";
-import { Search, MapPin, Phone, BookOpen, GraduationCap, X } from "lucide-react";
+import { GraduationCap, MapPin, Phone, Search, X } from "lucide-react";
+import { useState } from "react";
 import "../../App.css";
+import { categories, educationData, villages } from "../../data/EducationData.jsx";
 import "./Style.css";
 
 const Education = () => {

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { templesData, templeCategories } from "../../data/templesData.jsx";
-import { villages } from "../../data/HealthCareData.jsx";
-import { Search, MapPin, Clock, Info, Navigation, Phone } from "lucide-react";
+import { Clock, MapPin, Navigation, Phone, Search } from "lucide-react";
+import { useState } from "react";
 import "../../App.css";
+import { villages } from "../../data/HealthCareData.jsx";
+import { templeCategories, templesData } from "../../data/templesData.jsx";
 import "./Style.css";
 
 const Temples = () => {

@@ -1,10 +1,18 @@
-import React, { useState, useEffect } from "react";
-import { healthcareData, healthCategories, villages } from "../../data/HealthCareData.jsx";
 import {
-    Search, MapPin, Phone, Clock, Activity,
-    Map as MapIcon, Heart, AlertCircle, X, ExternalLink, Droplet, Microscope, Pill
+    AlertCircle,
+    Droplet,
+    Heart,
+    Map as MapIcon,
+    MapPin,
+    Microscope,
+    Phone,
+    Pill,
+    Search,
+    X
 } from "lucide-react";
+import { useState } from "react";
 import "../../App.css";
+import { healthcareData, healthCategories, villages } from "../../data/HealthCareData.jsx";
 import "./Style.css";
 
 const Healthcare = () => {

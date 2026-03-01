@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { jobListings, jobCategories, skillCenters } from "../../data/BusinessData.jsx";
-import { villages } from "../../data/CommunityData.jsx";
-import { Search, Briefcase, Users, MapPin, PlusCircle, GraduationCap } from "lucide-react";
+import { GraduationCap, MapPin, PlusCircle, Search, Users } from "lucide-react";
+import { useState } from "react";
 import "../../App.css";
+import { jobCategories, jobListings, skillCenters } from "../../data/BusinessData.jsx";
+import { villages } from "../../data/CommunityData.jsx";
 import "./Style.css";
 
 const Business = () => {

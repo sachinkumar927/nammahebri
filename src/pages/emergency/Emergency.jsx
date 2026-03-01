@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { emergencyData, emergencyCategories } from "../../data/EmergencyData.jsx";
-import { Search, Phone, Shield, AlertTriangle, Info } from "lucide-react";
+import { Info, Phone, Search } from "lucide-react";
+import { useState } from "react";
 import "../../App.css";
+import { emergencyCategories, emergencyData } from "../../data/EmergencyData.jsx";
 import "./Style.css";
 
 const Emergency = () => {

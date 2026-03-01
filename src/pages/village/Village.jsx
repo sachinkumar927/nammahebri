@@ -1,10 +1,15 @@
-import React, { useState } from "react";
-import { villagesData } from "../../data/villagesData.jsx"; // Ensure path is correct
 import {
-  Users, MapPin, Landmark, Phone, Bus,
-  Map as MapIcon, Info, Navigation, ArrowRight
+  ArrowRight,
+  Bus,
+  Landmark,
+  Map as MapIcon,
+  Navigation,
+  Phone,
+  Users
 } from "lucide-react";
+import { useState } from "react";
 import "../../App.css";
+import { villagesData } from "../../data/villagesData.jsx"; // Ensure path is correct
 import "./Style.css";
 
 const Villages = () => {

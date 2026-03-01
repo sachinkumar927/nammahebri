@@ -1,20 +1,20 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Home from "./pages/home/Home";
-import Villages from "./pages/village/Village";
-import NotFound from "./components/NotFound";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
-import Education from "./pages/education/Education";
-import Healthcare from "./pages/healthcare/HealthCare";
-import Temples from "./pages/temples/Temples";
-import Emergency from "./pages/emergency/Emergency";
-import Tourism from "./pages/tourism/Tourism";
-import DeptOffices from "./pages/deptOffices/DeptOffices";
-import Community from "./pages/community/Community";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import NotFound from "./components/NotFound";
 import Agriculture from "./pages/agriculture/Agriculture";
 import Business from "./pages/business/Business";
+import Community from "./pages/community/Community";
+import DeptOffices from "./pages/deptOffices/DeptOffices";
+import Education from "./pages/education/Education";
+import Emergency from "./pages/emergency/Emergency";
+import Healthcare from "./pages/healthcare/HealthCare";
+import Home from "./pages/home/Home";
 import Services from "./pages/service/Services";
+import Temples from "./pages/temples/Temples";
+import Tourism from "./pages/tourism/Tourism";
+import Villages from "./pages/village/Village";
 
 function App() {
   return (

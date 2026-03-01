@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import { tourismData, tourismCategories } from "../../data/TourismData.jsx";
 import {
-    MapPin, Compass, Utensils, Bed, Info,
-    Phone, Navigation, Star, Camera, Waves
+    Bed,
+    MapPin,
+    Navigation, Star
 } from "lucide-react";
+import { useState } from "react";
 import "../../App.css";
+import { tourismCategories, tourismData } from "../../data/TourismData.jsx";
 import "./Style.css";
 
 const Tourism = () => {

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { agriData, agriCategories, agriStats } from "../../data/AgricultureData.jsx";
-import { villages } from "../../data/CommunityData.jsx"; // Reuse the village list
-import { Search, Sprout, Droplets, Tractor, ShoppingCart, ShieldCheck, MapPin } from "lucide-react";
+import { Droplets, MapPin, Search, ShieldCheck, Sprout } from "lucide-react";
+import { useState } from "react";
 import "../../App.css";
+import { agriCategories, agriData, agriStats } from "../../data/AgricultureData.jsx";
+import { villages } from "../../data/CommunityData.jsx"; // Reuse the village list
 import "./Style.css";
 
 const Agriculture = () => {
