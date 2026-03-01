@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { departmentData, deptCategories } from "../../data/DeptOfficesData";
+import { departmentData, deptCategories } from "../../data/DeptOfficesData.jsx";
 import {
     Search, ChevronRight, Phone, Info,
     FileText, Users, Sprout, Vote, GraduationCap, HardHat, Building2, HeartPulse, X

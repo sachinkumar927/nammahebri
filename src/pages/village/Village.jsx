@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { villagesData } from "../../data/villagesData"; // Ensure path is correct
+import { villagesData } from "../../data/villagesData.jsx"; // Ensure path is correct
 import {
   Users, MapPin, Landmark, Phone, Bus,
   Map as MapIcon, Info, Navigation, ArrowRight

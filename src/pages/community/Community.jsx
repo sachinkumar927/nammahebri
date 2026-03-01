@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { communityData, communityCategories, successStories, galleryPhotos, villages } from "../../data/CommunityData";
+import { communityData, communityCategories, successStories, galleryPhotos, villages } from "../../data/CommunityData.jsx";
 import { Search, MapPin, Camera, Star } from "lucide-react";
 import "../../App.css";
 

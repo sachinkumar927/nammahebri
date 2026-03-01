@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { educationData, categories, villages } from "../../data/EducationData";
+import { educationData, categories, villages } from "../../data/EducationData.jsx";
 import { Search, MapPin, Phone, BookOpen, GraduationCap, X } from "lucide-react";
 import "../../App.css";
 import "./Style.css";

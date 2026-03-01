@@ -15,8 +15,8 @@ import {
     Phone,
 } from "lucide-react";
 
-import { villagesData } from "../../data/villagesData";
-import { templesData } from "../../data/TemplesData";
+import { villagesData } from "../../data/villagesData.jsx";
+import { templesData } from "../../data/TemplesData.jsx";
 
 const quickAccessItems = [
     { label: "Villages", path: "/villages", icon: MapPin, color: "bg-gov-blue" },

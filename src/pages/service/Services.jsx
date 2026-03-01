@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { serviceListings, serviceCategories } from "../../data/ServiceData";
-import { villages } from "../../data/CommunityData";
+import { serviceListings, serviceCategories } from "../../data/ServiceData.jsx";
+import { villages } from "../../data/CommunityData.jsx";
 import { Search, Phone, MapPin, Tool, Truck, Wrench, Hammer } from "lucide-react";
 import "../../App.css";
 import "./Style.css";

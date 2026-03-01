@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { tourismData, tourismCategories } from "../../data/TourismData";
+import { tourismData, tourismCategories } from "../../data/TourismData.jsx";
 import {
     MapPin, Compass, Utensils, Bed, Info,
     Phone, Navigation, Star, Camera, Waves

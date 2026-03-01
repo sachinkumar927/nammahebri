@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { jobListings, jobCategories, skillCenters } from "../../data/BusinessData";
-import { villages } from "../../data/CommunityData";
+import { jobListings, jobCategories, skillCenters } from "../../data/BusinessData.jsx";
+import { villages } from "../../data/CommunityData.jsx";
 import { Search, Briefcase, Users, MapPin, PlusCircle, GraduationCap } from "lucide-react";
 import "../../App.css";
 import "./Style.css";

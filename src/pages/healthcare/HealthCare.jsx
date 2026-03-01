@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { healthcareData, healthCategories, villages } from "../../data/HealthCareData";
+import { healthcareData, healthCategories, villages } from "../../data/HealthCareData.jsx";
 import {
     Search, MapPin, Phone, Clock, Activity,
     Map as MapIcon, Heart, AlertCircle, X, ExternalLink, Droplet, Microscope, Pill

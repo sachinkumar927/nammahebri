@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { templesData, templeCategories } from "../../data/TemplesData";
-import { villages } from "../../data/HealthCareData";
+import { templesData, templeCategories } from "../../data/TemplesData.jsx";
+import { villages } from "../../data/HealthCareData.jsx";
 import { Search, MapPin, Clock, Info, Navigation, Phone } from "lucide-react";
 import "../../App.css";
 import "./Style.css";

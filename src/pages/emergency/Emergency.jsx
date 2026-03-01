@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { emergencyData, emergencyCategories } from "../../data/EmergencyData";
+import { emergencyData, emergencyCategories } from "../../data/EmergencyData.jsx";
 import { Search, Phone, Shield, AlertTriangle, Info } from "lucide-react";
 import "../../App.css";
 import "./Style.css";
